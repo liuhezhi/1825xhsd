@@ -1,0 +1,619 @@
+@import 'public';
+
+//头部
+header{
+	.header{
+    	width: 100%;
+    	background:#f5f5f5;
+    	border: solid 1px #ddd;
+		.header-nav{
+    		background:#f5f5f5;
+    		width: 1194px;
+    		height: 30px;
+    		font-size: 12px;
+    		margin:0 auto;
+    		span{
+    		    line-height: 30px;
+    		    a{
+    		        color: #1890ff;
+    		    }
+    		}
+    		ul{
+    			float: right;
+    		    line-height: 30px;
+    			li{
+    				float:left;
+    				padding-left: 10px;
+    				i{
+    				    color: red;
+    				}
+    				span{
+    					font-size: 12px;
+    					color: #ddd;
+    				}
+    			}
+    		}	
+		}
+	}
+	.article{
+	    width: 100%;
+        background:#fff;
+		.header-article{
+		    width:1194px;
+		    height: 90px;
+		    margin: 0 auto;
+		    margin-top: 50px;
+		    padding-left: 15px;
+		    .article-float{
+		        float: left;
+		    }
+		    .article-logo{
+		        width: 150px;
+		        img{
+		            height: 60px;
+		        }
+		    }
+		    .article-input{
+		        margin-left: 300px;
+		        width: 490px;
+		        input{
+		            width: 430px;
+		            height: 30px;
+		            border: 1px solid #c62e2d;
+		            padding-left: 5px;
+		            color: #C8C8C8;
+		            float: left;
+		        }
+		        span{
+		            button{
+    		            width: 40px !important;
+    		            height: 32px !important;
+    		            background: #c62e2d;
+    		            i{
+    		                color: #fff;
+    		            }
+		            }
+		        }
+                .article-nav{
+                    font-size: 12px;
+                    .dl-float{
+                        float: left;
+                    }
+                    dd{
+                        padding-left: 20px;
+                        color: #c8c8c8;
+                    }
+                }
+		    }
+		    .article-shopping{
+		        margin-left: 15px;
+		        width: auto;
+		        height: 32px;
+		        padding: 0 5px 0 10px;
+		        border: 1px solid #C8C8C8;
+                color: #666;
+                font-size: 14px;
+                line-height: 30px;
+		        a{
+		            color: #666;
+		            i{
+		                color: #c62e2d;
+		            }
+		            span{
+		                color: #c62e2d;
+		            }
+		        }
+		    }
+		}
+		.nav{
+		    height: 40px;
+		    width: 1194px;
+		    background: #fff;
+		    margin:0 auto;
+		    .nav-one{
+		        float: left;
+		    }
+		    .nav-menu{
+		        background: #90766d;
+		        color: #fff;
+		        width: 186px;
+		        height: 47px;
+		        line-height: 47px;
+		        a{
+		            padding: 10px 20px;
+		        }
+		    }
+		    .nav-nav{
+		        line-height: 40px;
+		        font-size: 14px;
+		        ul{
+		            li{
+		                float: left;
+		                padding-left: 30px;
+		            }
+		        }
+		    }
+		}
+	}   
+}
+//内容
+section{
+    .section{
+        .car{
+            width: 100%;
+            background: #fff;
+            .car-ring{
+                .wrapper{
+                    width: 100%;
+                    height: 380px;
+                    overflow: hidden;
+                    position: relative;
+                    ul{
+                        position:relative;
+                        li{
+                            position:absolute;
+                            top:0;
+                            left:0;
+                        }
+                    }
+                    ol{
+                        position: absolute;
+                        bottom: 10px;
+                        left: 520px;
+                        width: 210px;
+                        li{
+                            float: left;
+                            width: 20px;
+                            height: 20px;
+                            margin: 0 5px;
+                            text-align: center;
+                            border-radius: 50%;
+                            cursor: default;
+                            background-color: #abc;
+                            .current{
+                                background-color: pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .list{
+            width: 100%;
+            background: #f0f3ef;
+            .list-1{
+                height: 145px;
+                .list-one{
+                    width: 1194px;
+                    height: 145px;
+                    margin: 0 auto;
+                    background: #f0f3ef;
+                    padding-top: 10px;
+                    ul{
+                        padding-left: 185px;
+                        li{
+                            float: left;
+                            margin-left: 10px;
+                            img{
+                                width: 190px;
+                                height: 140px;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-2{
+                height: 488px;
+                margin-top: 28px;
+                .list-two{
+                    width: 1194px;
+                    margin: 0 auto;
+                    .eve-one:last-child{
+                        margin-right: 0;
+                    }
+                    .eve-one{
+                        width: 390px;
+                        height: 488px;
+                        background: #fff;
+                        float: left;
+                        margin-right: 10px;
+                        .one-row-b{
+                            width: 388px;
+                            height: 58px;
+                        }
+                        .one-row{
+                            width: 388px;
+                            height: 85px;
+                            margin: 4px;
+                            .row-float{
+                                float: left;
+                            }
+                            .number{
+                                width: 59px;
+                                height: 74px;
+                                img{
+                                    width: 59px;
+                                    height: 74px;
+                                }
+                            }
+                            .component{
+                                width: 320px;
+                                height: 85px;
+                                padding-left: 9px;
+                                a{
+                                    width:310px;
+                                    height: 60px;
+                                    img{
+                                        width: 50px;
+                                        height: 60px;
+                                        float: left;
+                                        padding-top: 10px;
+                                    }
+                                    span{
+                                        padding-left: 26px;
+                                        h2{
+                                            margin: 12px 0 0;
+                                            smargin-top: 12px;
+                                            height: 32px;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            color: #1E1E1E;
+                                            font-weight: 400;
+                                        }
+                                        p{
+                                            font-size: 12px;
+                                            color: #d7622d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .one-row-2{
+                            img{
+                                padding-top: 12px;
+                            }
+                            span{
+                                img{
+                                    float: left;
+                                }
+                            }
+                        }
+                        .one-row-3{
+                            img{
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-3{
+                height: 130px;
+                margin-top: 28px;
+                .list-three{
+                    width: 1194px;
+                    margin: 0 auto;
+                    ul{
+                        li{
+                            float: left;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+            .list-4{
+                height: 320px;
+                padding-top: 30px;
+                .list-four{
+                    width: 1194px;
+                    height: 320px;
+                    background: #fff;
+                    margin: 0 auto;
+                    .title-h{
+                        padding: 20px 0 20px;
+                        h2{
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 26px;
+                            color: #1E1E1E;
+                            float: left;
+                            padding-left: 30px;
+                            font-weight: normal;
+                        }
+                        ul{
+                            float: right;
+                            li{
+                                float: left;
+                                margin: 0 24px 0 0;
+                                padding: 4px;
+                                font-size: 12px;
+                                color: #84685E;
+                            }
+                        }
+                    }
+                    .tab{
+                        height: 160px;
+                        clear: both;
+                        .tab-one{
+                            float: left;
+                            padding: 10px;
+                            width: 165px;
+                            .tab-img{
+                                width: 160px;
+                                height: 160px;
+                                text-align: center;
+                                img{
+                                    height: 100%;
+                                }
+                            }
+                            h2{
+                                margin: 12px 0 0;
+                                height: 32px;
+                                font-size: 12px;
+                                line-height: 16px;
+                                color: #1E1E1E;
+                            }
+                            p{
+                                margin: 10px 0 0;
+                                height: 22px;
+                                line-height: 22px;
+                                color: #C62E2D;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .list-5{
+                height: 390px;
+                padding-top: 30px;
+                background: #f0f3ef;
+                .list-five{
+                    width: 1194px;
+                    height: 390px;
+                    background: #fff;
+                    margin: 0 auto;
+                    .title-one{
+                        height: 60px;
+                    }
+                    .list-book{
+                        ul{
+                            li{
+                                width: 390px;
+                                height: 330px;
+                                float: left;
+                                padding-right: 10px;
+                                .people{
+                                    .p-one{
+                                        .p-img{
+                                            height: 152px;
+                                            padding-top: 33px;
+                                            padding-left: 15px;
+                                            background: url(../img/sysd/p1t.jpg) no-repeat;
+                                        }
+                                        .p-zp{
+                                            width: 390px;
+                                            height: 160px;
+                                            padding: 0 16px 12px 25px;
+                                            .pf{
+                                                float: left;
+                                            }
+                                            .p-book{
+                                                height: 80px;
+                                                width: 80px;
+                                                img{
+                                                    height: 100%;
+                                                    width: auto;
+                                                }
+                                            }
+                                            .p{
+                                                font-size: 12px;
+                                                line-height: 20px;
+                                                height: 20px;
+                                                width: 250px;
+                                                p{
+                                                    margin-top: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .list-list{
+                height: 815px;
+                margin-top: 50px;
+                .list-list-one{
+                    width: 1194px;
+                    margin: 0 auto;
+                    .child:last-child{
+                        margin-right: 0;
+                    }
+                    .child{
+                        height: 815px;
+                        width: 590px;
+                        background: #fff;
+                        float: left;
+                        margin-right: 10px;
+                        .child-1{
+                           width: 590px;
+                           height: 58px; 
+                           img{
+                               width: 590px;
+                               height: 58px; 
+                           }
+                        }
+                        .child-2{
+                            height: 550px;
+                            .float{
+                                float: left;
+                            }
+                            .child-2-1{
+                                padding-left: 10px;
+                                img{
+                                    width: 160px;
+                                    height: 470px;
+                                }
+                            }
+                            .child-2-2{
+                                .child-tao{
+                                    position: relative;
+                                    display: inline-block;
+                                    margin: 8px;
+                                    padding: 10px;
+                                    width: 170px;
+                                    .child-img{
+                                        width: 160px;
+                                        height: 160px;
+                                        text-align: center;
+                                        img{
+                                            height: 100%;
+                                            width: auto;
+                                        }
+                                    }
+                                    h2{
+                                        margin: 12px 0 0;
+                                        height: 32px;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        color: #1E1E1E;
+                                        font-weight: 400;
+                                        width: 160px;
+                                    }
+                                    p{
+                                        margin: 10px 0 0;
+                                        height: 22px;
+                                        line-height: 22px;
+                                        color: #C62E2D;
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        .child-3{
+                            .one-1{
+                                float: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//footer
+footer{
+    .footer{
+        background: #eaeaea;
+        width: 100%;
+        .foot-one{
+            background: #eaeaea;
+            width: 100%;
+            height: 155px;
+            .foot-1{
+                width: 1194px;
+                height: 155px;
+                margin: 0 auto;
+                ul{
+                    li{
+                        margin-top: 80px;
+                        width: 298px;
+                        height: 32px;
+                        float: left;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .foot-two{
+            background: #eaeaea;
+            width: 100%;
+            height: 188px;
+            padding-top: 44px;
+            border-top: 1px solid #908888;
+            border-bottom: 1px solid #908888;
+            .foot-2{
+                background: #eaeaea;
+                width: 1194px;
+                height: 188px;
+                margin: 0 auto;
+                .col{
+                    width: 1194px;
+                    margin: 0 auto;
+                    .col-1{
+                        float: left;
+                        width: 72px;
+                        padding-left: 130px;
+                        .p{
+                            font-size: 18px;
+                            color: rgb(51, 51, 51);
+                            font-weight: bold;
+                        }
+                        p{
+                            color: rgb(153, 153, 153);
+                            font-weight: bold;
+                            font-size: 14px;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .foot-three{
+            width: 100%;
+            height: 265px;
+            .foot-3{
+                width: 1194px;
+                height: 265px;
+                margin: 0 auto;
+                .wen{
+                    padding-top: 50px;
+                    width: 594px;
+                    height: 130px;
+                    margin: 0 auto;
+                    p{
+                        text-align: center;
+                        font-weight: bold;
+                        color: #999;
+                        font-size: 12px;
+                        padding-top: 12px;
+                    }
+                }
+                .wen-two{
+                    padding-top: 30px;
+                    padding-left: 60px;
+                    width: 594px;
+                    margin: 0 auto;
+                    text-align: center;
+                    .di{
+                       padding-left: 10px;
+                       width: 140px;
+                       height: 25px;
+                       float: left;
+                       .left{
+                           float: left;
+                       }
+                       .di-one{
+                           width: 30px;
+                           height: 25px;
+                           img{
+                               width: 30px;
+                               height: 25px;
+                           }
+                       } 
+                       .di-two{
+                           width: 110px;
+                           height: 25px;
+                           line-height: 25px;
+                           font-size: 12px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
