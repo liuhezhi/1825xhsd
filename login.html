@@ -5,7 +5,10 @@
 		<title>登陆</title>
 		<link rel="stylesheet" href="css/login.css" />
 		<link rel="stylesheet" type="text/css" href="css/font/iconfont.css"/>
-		
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	
 	</head>
 	<body>
 		<div class="section">
@@ -14,25 +17,7 @@
 				<span>欢迎登陆</span>
 			</div>
 			<div class="login">
-				<div class = "right">
-			<form action="">
-				<h4>账户登录</h4>
-				<p class="line">使用想去账号登录</p>
-				<input type="text"  placeholder = "请输入手机号或者邮箱">
-				<input type = "text" placeholder = "请输入密码">
-				<span><a href="">忘记密码》</a></span>
-				<input type="text" value="登录" id="denglu">
-				<p class="line">使用社交账户登录</p>
-				<ul>
-					<a href=""><li></li></a>
-					<a href=""><li class="first"></li></a>
-					<a href=""><li class="sencond"></li></a>
-				</ul>
-				<p class="btm">还没有账号？<a href="sign in.html">立即注册》</a></p>
-			</form>
-			
-		</div>
-				<!--<div class="border">
+				<div class="border">
 					<div class="box">
 						<div class="one">
 							<div class="ul">
@@ -45,24 +30,41 @@
 								<div class="num-boxs">
 									<div class="phone">
 										<span class="iconfont">&#xe672;</span>
-										<input type="text" placeholder="手机号" />
-										<span></span>
+										<input type="text" id="user" placeholder="手机号" />
 									</div>
+										<span>*格式不正确</span>
 									<div class="phone">
 										<span class="iconfont">&#xe691;</span>
-										<input type="text" placeholder="密码" />
-										<span></span>
+										<input type="text" id="pwd" placeholder="密码" />
+									</div>
+										<span>*格式不正确</span>
+									<div class="line">
+										<a href="" class="a">忘记密码</a>
+										<a href="" class="a">免费注册</a>
+									</div>
+									<div class="btn">
+										<input type="button" name="" id="btn" value="立即登陆" />
+									</div>
+									<div class="dibu">
+										<div class="or">
+											<span>or</span>
+										</div>
+										<div class="deng">
+											<p class="iconfont">&#xe7e5;</p>
+											<p class="iconfont">&#xe7e5;</p>
+											<p class="iconfont">&#xe7e5;</p>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>-->
+				</div>
 			</div>
 			<div class="foot">
 				<span>
-    Copyright © 2015-2019  新华互联电子商务有限责任公司 版权所有
-  </span>
+				    Copyright © 2015-2019  新华互联电子商务有限责任公司 版权所有
+				</span>
 			</div>
 		</div>
 	</body>

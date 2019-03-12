@@ -27,3 +27,4 @@
 			timer = setInterval( autoPlay , 2000 );
 		}
 	} 
+	//导航栏

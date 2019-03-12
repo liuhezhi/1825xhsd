@@ -33,70 +33,115 @@ h2 {
     width: 100%;
     height: 500px;
     background: url(../img/dl/xh-login1.jpg); }
-    .section .login .right {
-      text-align: center;
-      width: 394px;
-      height: 453px;
-      margin-left: 44px;
-      margin-top: 50px;
-      float: left;
-      background: #fff;
-      border: 1px solid #e3e3e3; }
-      .section .login .right h4 {
-        margin-top: 20px;
-        margin-bottom: 14px;
-        font-weight: normal; }
-      .section .login .right .line {
-        margin-left: 26px;
-        margin-right: 26px;
-        font-size: 12px;
-        color: #d3d3d3;
-        margin-bottom: 10px;
-        background: url(../img/denglu/faster_line.jpg); }
-      .section .login .right input {
-        width: 348px;
-        height: 48px;
-        border-radius: 6px;
-        margin-top: 12px;
-        border: 1px solid #e3e3e3; }
-      .section .login .right span {
-        float: right;
-        font-size: 12px;
-        margin-top: 12px;
-        margin-right: 20px; }
-      .section .login .right #denglu {
-        background: #000;
-        color: #fff;
-        text-align: center;
-        margin-top: 4px;
-        margin-bottom: 26px; }
-      .section .login .right ul {
-        width: 100%;
-        margin-bottom: 24px;
-        margin-left: 108px;
-        margin-top: 10px;
-        float: left; }
-        .section .login .right ul li {
-          float: left;
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          background: url(../img/denglu/three_logo.gif) no-repeat;
-          margin-left: 16px; }
-        .section .login .right ul .first {
-          position: relative;
-          background: url(../img/denglu/three_logo.gif) no-repeat -52px 0; }
-        .section .login .right ul .sencond {
-          position: relative;
-          background: url(../img/denglu/three_logo.gif) no-repeat -105px 0; }
-      .section .login .right .btm {
-        font-size: 14px;
-        color: #e3e3e3; }
-      .section .login .right a {
-        color: #000;
-        text-decoration: none; }
-      .section .login .right a:hover {
-        text-decoration: underline; }
+    .section .login .border {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px 40px;
+      text-align: right; }
+      .section .login .border .box {
+        display: inline-block;
+        box-shadow: 0 5px 23px 0 rgba(0, 0, 0, 0.1);
+        text-align: right;
+        color: #1E1E1E;
+        font-size: 12px; }
+        .section .login .border .box .one {
+          width: 384px;
+          height: 418px;
+          padding: 0;
+          border: 1px solid #999;
+          background: #fff; }
+          .section .login .border .box .one .ul {
+            border-bottom: 1px solid #F7F7F7;
+            height: 70px; }
+            .section .login .border .box .one .ul ul {
+              height: 70px; }
+              .section .login .border .box .one .ul ul li {
+                width: 50%;
+                padding-right: 50px;
+                background-color: #fff;
+                padding: 0;
+                line-height: 64px;
+                font-size: 18px;
+                border-top: 0;
+                float: left; }
+                .section .login .border .box .one .ul ul li span {
+                  padding-right: 50px; }
+          .section .login .border .box .one .num {
+            clear: both;
+            height: 352px;
+            background: #fff; }
+            .section .login .border .box .one .num .num-boxs {
+              width: 291px;
+              height: 291px;
+              margin: 50px 48px 10px 48px; }
+              .section .login .border .box .one .num .num-boxs .phone {
+                position: relative;
+                width: 288px;
+                height: 40px;
+                border: 1px solid #c9bfbf; }
+                .section .login .border .box .one .num .num-boxs .phone .iconfont {
+                  position: absolute;
+                  top: 12px;
+                  left: 10px;
+                  font-size: 14px;
+                  z-index: 4;
+                  color: #666; }
+                .section .login .border .box .one .num .num-boxs .phone input {
+                  line-height: 36px;
+                  width: 255px;
+                  margin-right: 0;
+                  border: none; }
+              .section .login .border .box .one .num .num-boxs span {
+                font-size: 12px;
+                color: #666;
+                line-height: 18px;
+                margin-right: 180px; }
+              .section .login .border .box .one .num .num-boxs .line {
+                width: 288px;
+                height: 12px;
+                margin-top: 20px; }
+                .section .login .border .box .one .num .num-boxs .line .a {
+                  float: left;
+                  padding-right: 150px; }
+                .section .login .border .box .one .num .num-boxs .line .a:last-child {
+                  padding-right: 0; }
+              .section .login .border .box .one .num .num-boxs .btn {
+                width: 288px;
+                height: 40px;
+                margin: 0 auto;
+                margin-top: 20px; }
+                .section .login .border .box .one .num .num-boxs .btn input {
+                  width: 288px;
+                  height: 40px;
+                  background: #c62e2d;
+                  color: #fff;
+                  font-weight: 400;
+                  line-height: 14px;
+                  font-size: 14px; }
+              .section .login .border .box .one .num .num-boxs .dibu {
+                width: 288px;
+                height: 70px;
+                margin-top: 20px; }
+                .section .login .border .box .one .num .num-boxs .dibu .or {
+                  width: 288px;
+                  height: 12px;
+                  color: #CCC; }
+                .section .login .border .box .one .num .num-boxs .dibu .deng {
+                  width: 288px;
+                  height: 44px;
+                  margin-top: 20px;
+                  margin-left: 30px; }
+                  .section .login .border .box .one .num .num-boxs .dibu .deng .iconfont {
+                    background: #45c45d;
+                    color: #fff;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    font-size: 22px;
+                    line-height: 32px;
+                    text-align: center;
+                    float: left;
+                    margin-left: 24px; }
   .section .foot {
     text-align: center;
     line-height: 40px;

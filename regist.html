@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+  .divAll{
+	  width:800px;
+	  font-family:'黑体';
+	  margin:50px auto;
+	  }
+  #titles{
+	  font-weight:bold;
+	  font-size:18px;
+	  height:50px;
+	  line-height:50px;
+	 color: red;
+	  text-align:center; 
+	  border-bottom:2px solid #f00;;
+	  }
+  #contents{
+	   margin-top:20px;
+	   background:#FFF9F3;
+	     margin:50px auto;
+	   }
+   #form-itemGroup{
+	  padding:5px;
+	 margin-left:200px;
+	   }
+   #form-itemGroup label{
+	   display:inline-block;
+	   width:100px;
+	   height:32px;
+	   line-height:32px;
+	   color:#666;
+	   text-align:right;
+	   }
+   #form-itemGroup .userName{
+	   width:200px;
+	   height:20px;
+	   line-height:40px;
+	   border:1px solid #CCC;
+	   }	
+   #form-itemGroup .default{
+	   width:200px;
+	   height:32px;
+	   line-height:32px;
+	   color:#999;
+	   } 
+ 
+   #form-itemGroup .error{
+	   height:32px;
+	   line-height:32px;
+	   color:#F00;
+	   }
+   #form-itemGroup .success{
+	   height:32px;
+	   line-height:32px;
+	   color:#096;
+	   } 
+   .divBtn{
+	   margin-top:20px;
+	   margin-left:320px;
+	   width:200px;
+	   height:32px;
+	   line-height:32px;
+	   background-color:#F00;
+	   margin-bottom:10px;
+	   color:#ffffff;
+	   font-weight:bold;
+	   border:none;
+	   }
+</style>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="divAll">
+     <div id="titles">用户注册</div>
+     <div id="contents">
+    
+     
+     <form action="#" onSubmit="return checkForm()">
+       <div id="form-itemGroup">
+           <label for="userName">用户名：</label>
+           <input type="text" id="userName" class="userName" placeholder="请输入用户名" onBlur="checkUserName()" oninput="checkUserName()"  >
+           <span class="default" id="nameErr"  ></span>
+       </div>
+       
+       <div id="form-itemGroup">
+           <label for="userPasword">密码：</label>
+           <input type="password" id="userPasword" class="userName" placeholder="请输入密码" onBlur="checkPassword()" oninput="checkPassword()">
+           <span class="default" id="passwordErr"></span>
+       </div>
+       
+       <div id="form-itemGroup">
+           <label for="userConfirmPasword">确认密码：</label>
+           <input type="password" id="userConfirmPasword" class="userName" placeholder="请输入确认密码" onBlur="ConfirmPassword()" oninput="ConfirmPassword()">
+           <span class="default" id="conPasswordErr"></span>
+       </div>
+	   
+       <div id="form-itemGroup">
+           <label for="useremail">邮箱：</label>
+           <input type="text" id="useremail" class="userName" placeholder="请输入邮箱" onBlur="checkemail()" oninput="checkemail()" >
+           <span class="default" id="emailErr"></span>
+       </div>
+       
+	    <div id="form-itemGroup">
+           <label for="userqq">QQ：</label>
+           <input type="text" id="userqq" class="userName" placeholder="请输入QQ号码" onBlur="checkqq()" oninput="checkqq()">
+           <span class="default" id="qqErr"></span>
+       </div>
+	   
+	   
+       <div id="form-itemGroup">
+           <label for="userPhone">手机号码：</label>
+           <input type="text" id="userPhone" class="userName" placeholder="请输入用户名" onBlur="checkPhone()" oninput="checkPhone()">
+           <span class="default" id="phoneErr">请输入手机号码</span>
+       </div>
+       
+	    <div id="form-itemGroup">
+           <label for="userurl">个人主页：</label>
+           <input type="text" id="userurl" class="userName" placeholder="请输入个人主页URL" onBlur="checkurl()" oninput="checkurl()">
+           <span class="default" id="urlErr"></span>
+       </div>
+	   
+       <div>
+         <button type="submit" class="divBtn">提交</button>
+       </div>
+     </form>
+     </div>
+  </div>
+
+ <script type="text/javascript">
+   function checkForm(){
+	    var nametip = checkUserName();
+		var passtip = checkPassword(); 
+		var conpasstip = ConfirmPassword();
+		var phonetip = checkPhone();
+	    return nametip && passtip && conpasstip && phonetip;
+	   }
+	 
+    //验证用户名	 
+    function checkUserName(){
+	    
+		var username = document.getElementById('userName');
+		var errname = document.getElementById('nameErr');
+		var pattern = /^\w{3,}$/;    //用户名格式正则表达式：用户名要至少三位
+		if(username.value.length == 0){
+			errname.innerHTML="用户名不能为空"
+			errname.className="error"
+			return false;
+			}
+		
+		if(!pattern.test(username.value)){
+			errname.innerHTML="用户名不合规范"
+			errname.className="error"
+			return false;
+			}
+		 else{
+			  errname.innerHTML="OK"
+	          errname.className="success";
+			  return true;
+			 }
+	    
+		}
+	
+    //验证密码	
+	function checkPassword(){
+		var userpasswd = document.getElementById('userPasword');
+		var errPasswd = document.getElementById('passwordErr');
+		
+		var pattern = /^\w{4,8}$/;  //密码要在4-8位
+		
+		if(!pattern.test(userpasswd.value)){
+			errPasswd.innerHTML="密码不合规范"
+			errPasswd.className="error"
+			return false;
+			}
+		 else{
+			  errPasswd.innerHTML="OK"
+	          errPasswd.className="success";
+			  return true;
+			 }
+		}
+	
+    //确认密码
+    function ConfirmPassword(){
+		var userpasswd = document.getElementById('userPasword');
+		var userConPassword = document.getElementById('userConfirmPasword');
+		var errConPasswd = document.getElementById('conPasswordErr');
+		
+		if((userpasswd.value)!=(userConPassword.value) || userConPassword.value.length == 0){
+			errConPasswd.innerHTML="上下密码不一致"
+			errConPasswd.className="error"
+			return false;
+			}
+		 else{
+			  errConPasswd.innerHTML="OK"
+	          errConPasswd.className="success";
+			  
+			  return true;
+			 }	   
+	   }
+	//邮箱
+	  function checkemail(){
+	    
+		var username = document.getElementById('useremail');
+		var errname = document.getElementById('emailErr');
+		var pattern = /^\w+@\w+\.[a-z]{3}(\.[a-z]{2})?$/;    //用户名格式正则表达式：必须是126、163、qq邮箱中的一种，必须是.com或者.cn结尾
+		if(useremail.value.length == 0){
+			errname.innerHTML="用户名不能为空"
+			errname.className="error"
+			return false;
+			}
+		
+		if(!pattern.test(useremail.value)){
+			errname.innerHTML="用户名不合规范"
+			errname.className="error"
+			return false;
+			}
+		 else{
+			  errname.innerHTML="OK"
+	          errname.className="success";
+			  return true;
+			 }
+	    
+		}
+		//QQ：
+		function checkqq(){
+	    
+		var username = document.getElementById('userqq');
+		var errname = document.getElementById('qqErr');
+		var pattern = /^[0-9]{8,12}$/;    //用户名格式正则表达式：必须全是数字组成，长度8~12位
+		if(userqq.value.length == 0){
+			errname.innerHTML="用户名不能为空"
+			errname.className="error"
+			return false;
+			}
+		
+		if(!pattern.test(userqq.value)){
+			errname.innerHTML="用户名不合规范"
+			errname.className="error"
+			return false;
+			}
+		 else{
+			  errname.innerHTML="OK"
+	          errname.className="success";
+			  return true;
+			 }
+	    
+		}
+		
+	//验证手机号
+    function checkPhone(){
+	    var userphone = document.getElementById('userPhone');
+		var phonrErr = document.getElementById('phoneErr');
+		
+		var pattern = /^1[34578]\d{9}$/;  //验证手机号正则表达式
+		
+		if(!pattern.test(userphone.value)){
+			phonrErr.innerHTML="手机号码不合规范"
+			phonrErr.className="error"
+			return false;
+			}
+		 else{
+			  phonrErr.innerHTML="OK"
+	          phonrErr.className="success";
+			  return true;
+			 }
+	   }
+	   //主页
+	   function checkurl(){
+	    
+		var username = document.getElementById('userurl');
+		var errname = document.getElementById('urlErr');
+		var pattern = /^((http)?:\/\/)[^\s]{5,}\.com$/;   
+		//用户名格式正则表达式：URL地址必须是http://开头，必须是.com结尾，中间包含5个以上字符
+		if(userurl.value.length == 0){
+			errname.innerHTML="用户名不能为空"
+			errname.className="error"
+			return false;
+			}
+		
+		if(!pattern.test(userurl.value)){
+			errname.innerHTML="用户名不合规范"
+			errname.className="error"
+			return false;
+			}
+		 else{
+			  errname.innerHTML="OK"
+	          errname.className="success";
+			  return true;
+			 }
+	    
+		}
+	   
+ </script>
+
+	</body>
+</html>
+

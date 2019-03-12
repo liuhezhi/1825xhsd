@@ -1,0 +1,225 @@
+@import 'public';
+aside{
+    width: 100%;
+    background: #fff;
+    .aside{
+        width: 1194px;
+        margin: 0 auto;
+        .qing{
+            .mian{
+                width: 1194px;
+                height: 50px;
+                background: #f4f5f4;
+                margin-top: 36px;
+                ul{
+                    height: 50px;
+                    li{
+                        float: left;
+                        color: #999;
+                        font-size: 12px;
+                        line-height: 12px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .img{
+                width: 1194px;
+                height: 550px;
+                background: #fff;
+                margin-top: 30px;
+                .img-one{
+                    width: 1146px;
+                    height: 502px;
+                    padding: 24px;
+                    .img-img{
+                        width: 430px;
+                        height: 502px;
+                        float: left;
+                        .qingmang{
+                            width: 375px;
+                            height: 375px;
+                            img{
+                                width: auto;
+                                height: 100%;
+                                margin-left: 55px;
+                            }
+                        }
+                        .xiao-img{
+                            margin-top: 24px;
+                            width: 67px;
+                            height: 67px;
+                            border: 1px solid #c62e2d;
+                            text-align: center;
+                            img{
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
+                        .like{
+                            width: 430px;
+                            height: 21px;
+                            margin-top: 10px;
+                            .share{
+                                float: left;
+                                width: 70px;
+                                height: 20px;
+                                font-size: 14px;
+                                color: #666;
+                                line-height: 20px;
+                                span{
+                                    padding-left: 10px;
+                                    font-size: 16px;
+                                    color: #666;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                    .xin{
+                        width: 640px;
+                        height: 330px;
+                        margin-left: 10px;
+                        float: left;
+                        .title{
+                            width: 640px;
+                            height: 80px;
+                            .title-one{
+                                color: #1E1E1E;
+                                font-size: 16px;
+                                line-height: 22px;
+                                font-weight: 300;
+                                margin-bottom: 30px;
+                            }
+                            .title-two{
+                                margin-bottom: 30px;
+                                color: #1890FF;
+                                margin-right: 5px;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 18px;
+                                span{
+                                    font-weight: 700;
+                                    margin-right: 5px;
+                                    margin-left: 5px;
+                                    box-sizing: content-box;
+                                    vertical-align: middle;
+                                    display: inline-block;
+                                    color: #666666;
+                                    font-size: 12px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                        .back{
+                            width: 640px;
+                            height: 80px;
+                            background: #f7f5f1;
+                            .backk{
+                                width: 604px;
+                                height: 60px;
+                                padding: 20px;
+                                .back-one{
+                                    width: 604px;
+                                    height: 30px;
+                                    label{
+                                        font-size: 12px;
+                                        color: #666;
+                                        vertical-align: top;
+                                        text-align: right;
+                                        padding-right: 0;
+                                        width: 50px;
+                                        margin-right: 26px;
+                                    }
+                                    .price-1{
+                                        color: #ff7900;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        margin-top: -6px;
+                                        line-height: 20px;
+                                        .price-one{
+                                            font-size: 16px;
+                                            font-weight: 700;
+                                            color: #C62E2D;
+                                        }
+                                        .price-two{
+                                            color: #C62E2D;
+                                            font-size: 14px;
+                                        }
+                                        .price-three{
+                                            color: #5B5B5B;
+                                            text-decoration-line: line-through;
+                                            font-size: 14px;
+                                        }
+                                        .tong{
+                                            padding: 0 10px;
+                                            margin-bottom: 10px;
+                                            background: #C62E2D;
+                                            color: #fff;
+                                            font-weight: 700;
+                                            display: inline-block;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            cursor: pointer;
+                                            position: relative;
+                                            text-align: center;
+                                            font-size: 12px;
+                                            line-height: 18px;
+                                            margin-top: 5px;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                        .song{
+                            width: 640px;
+                            height: 42px;
+                            margin-top: 22px;
+                            margin-left: 30px;
+                            label{
+                                font-size: 12px;
+                                color: #666;
+                                vertical-align: top;
+                                text-align: right;
+                                padding-right: 0;
+                                width: 50px;
+                                margin-right: 26px;
+                            }
+                            span{
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-top: -6px;
+                                line-height: 28px;
+                                color: #333;
+                                font-size: 12px;
+                                margin-right: 10px;
+                            }
+                            .song-table{
+                                border: 1px solid #999;
+                            }
+                        }
+                        .gou{
+                            a{
+                                border: 1px solid #c62e2d;
+                                font-size: 16px;
+                                width: 157px;
+                                height: 40px;
+                                text-align: center;
+                                padding: 8px 12px;
+                                margin-right: 16px;
+                            }
+                            a:first-child{
+                                background: #fff;
+                                color:#c62e2d ;
+                            }
+                            a:last-child{
+                                color: #fff;
+                                background: #c62e2d;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
