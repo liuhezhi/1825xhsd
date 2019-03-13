@@ -131,7 +131,8 @@ header .article {
       height: 47px;
       line-height: 47px; }
       header .article .nav .nav-menu a {
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        color: #fff; }
     header .article .nav .nav-nav {
       line-height: 40px;
       font-size: 14px; }
@@ -339,7 +340,7 @@ section .section .list {
         width: 390px;
         height: 330px;
         float: left;
-        margin-right: 10px; }
+        margin-left: 5px; }
         section .section .list .list-5 .list-five .list-book ul li .people .p-one .p-img {
           height: 152px;
           padding-top: 33px;
