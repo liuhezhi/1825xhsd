@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class=" ">
+  <!-- Powered by Terminus.io -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>欢迎登录 - 我的新华书店</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/assets/images/other-images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <meta name="baidu-site-verification" content="P7Xr6eyWnw" />
+    <!-- pokeball iconfont -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_64273_1jpy4vobc6f.css">
+    <!-- spinda 的iconfont，请修改这个链接 -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_71525_yc0t4gxg87s.css">
+    <!-- feebas 前台的iconfont -->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_72064_e57yqoxf9hc.css" />
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1006337_2nax35nzjco.css">
+    <link rel="stylesheet" href="//assets-www.xinhuashudian.com/assets/styles/eevee-layout-677c65.css">
+    <link rel="stylesheet" href="//assets-www.xinhuashudian.com/assets/styles/vendor-1f7325.css">
+    <link rel="stylesheet" href="//assets-www.xinhuashudian.com/assets/styles/app-back-a0622d.css">
+    <script>
+        !function(e,t,n,s,a,c,i){e[a]=e[a]||function(){(e[a].q=e[a].q||[]).push(arguments)},c=t.createElement(n),i=t.getElementsByTagName(n)[0],c.async=1,c.src=s,i.parentNode.insertBefore(c,i)}(window,document,"script","//assets-www.xinhuashudian.com/assets/scripts/ta/ta.js","$ta");
+        $ta('start',{ udata: { uid: 0 }, ak: 'e5c105ea8bec11e8bad7024209002b12' , url: '//analytics.terminus.io/collect' })
+    </script>
+  </head>
+  <body class=""
+    data-base=""
+    data-env="production"
+    data-domain="www"
+    data-user-type=""
+    data-shop=""
+    data-user="null"
+    data-third="{&quot;wechat&quot;:1,&quot;qq&quot;:1,&quot;weibo&quot;:&quot;1&quot;}">
+    
+    <!--[if lt IE 7]>
+        <p class="browsehappy">您正使用<strong>过时</strong>的浏览器，因此您可能体验不到最好的效果,请点击<a href="http://browsehappy.com/">这里</a> 去升级您的浏览器</p>
+    <![endif]-->
+    <!--[if lt IE 8]>
+      <script src="http://cdn.staticfile.org/json2/20121008/json2.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.staticfile.org/html5shiv/3.7.2/html5shiv.js"></script>
+    <![endif]-->
+    <div class='auth-container js-comp eve-component' data-comp-path='common/auth_container'>  <div id="auth-div" data-auth="null"></div>
+</div>
+  <div class="main-login">
+      <div class="login-container-title">
+    <a href="//www.xhsd.com">
+      <img src="//assets-www.xinhuashudian.com/assets/images/other-images/logo-dd26c2.png" alt="" >
+    </a>
+    <span class="title-text">欢迎登录</span>
+  </div>
+
+    <div class="main-login-back" style="width: 100%;overflow: hidden;height:500px;background: url(/assets/images/other-images/xh-login1.jpg) center center no-repeat;background-color:white;background-size:1440px 500px">
+      <div class="outer-login" style="max-width: 1200px;margin: 0 auto;padding:10px 40px;text-align:right;">
+        <div class="login-container" style="display:inline-block;box-shadow: 0 5px 23px 0 rgba(0,0,0,0.10);">
+          <div class='component-login js-comp eve-component' data-comp-path='common/login'>  <div class="tab-container">
+    <div class="tab" data-type="switchable">
+      <ul class="tab-navs clearfix">
+        <li class="active left-text" data-role="nav"><a href="javascript:;">账户登录</a></li>
+        <li class="right-text" data-role="nav"><a href="javascript:;">快捷登录</a></li>
+      </ul>
+      <div class="tab-contents clearfix">
+        <div class="tab-content" data-role="content">
+          <form class="form form-aligned user-login-form js-user-login-form" method="post" action="/api/user/login" data-site-type="7">
+            <fieldset>
+              <div class="error-box js-error"></div>
+              <div class="control-group input-wrap" id="login-name">
+                <input type="hidden" name="target" value="http://cart.xhsd.com/buyer/cart">
+                <input id="login-type" type="hidden" name="type" value="3">
+                <input id="loginId" type="text" class="form-control" name="username" placeholder="手机号" autocomplete="off">
+                <i class="icon-feebas input-icon icon-feebas-people"></i>
+                <div class="tip-box js-tip"></div>
+              </div>
+              <div class="control-group input-wrap" id="login-password">
+                <input id="password" type="password" class="form-control" name="password" placeholder="密码" autocomplete="off">
+                <i class="icon-feebas input-icon icon-feebas-lock"></i>
+                <div class="tip-box js-tip"></div>
+              </div>
+              <div class="control-group" id="login-captcha">
+                <input name="captcha_answer" id="captcha" type="text" class="form-control" placeholder="图片验证码" autocomplete="off">
+                <i class="iconfont-xhsd input-icon icon-tupian"></i>
+                <img class="captcha-img js-captcha-img" src="" alt="">
+                <input type="hidden" name="captcha_token">
+                <div class="tip-box js-tip"></div>
+              </div>
+              <div class="control-group link-group">
+                <a class="forget-a" href="//passport.xhsd.com/forget-password">忘记密码</a>
+                <a class="register-a pull-right" href="//passport.xhsd.com/register">免费注册</a>
+              </div>
+              <div class="control-group" id="login-submit">
+                <input type="submit" class="form-control btn btn-primary" disabled value="立即登录">
+              </div>
+              <div class="social-group">
+                <div class="title-wrap">
+                  <span class="title">or</span>
+                </div>
+                <div class="content-wrap">
+                    <a class="iconfont-a iconfont-xhsd icon-weixin icon-const-weixin" href="/api/authorize?social_provider_id=wechat"></a>
+                    <a class="iconfont-a iconfont-xhsd icon-qq icon-const-qq" href="/api/authorize?social_provider_id=qq"></a>
+                    <a class="iconfont-a iconfont-xhsd icon-weibo icon-const-weibo" href="/api/authorize?social_provider_id=weibo"></a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="tab-content hide" data-role="content">
+          <form class="form form-aligned fast-login-form js-fast-login-form" data-site-type="7">
+            <fieldset>
+              <div class="error-box js-error"></div>
+              <div class="control-group input-wrap" id="fast-login-name">
+                <input type="hidden" name="target" value="http://cart.xhsd.com/buyer/cart">
+                <input type="hidden" name="type" value="3">
+                <input id="fast-loginName" type="text" class="form-control" name="phone_number" placeholder="请输入手机号">
+                <i class="iconfont-xhsd icon-shouji input-icon"></i>
+                <div class="tip-box js-tip"></div>
+              </div>
+              <div class="control-group" id="fast-login-captcha">
+                <input name="captcha_answer" id="fast-captcha" type="text" class="form-control" placeholder="图片验证码" autocomplete="off">
+                <i class="iconfont-xhsd input-icon icon-tupian"></i>
+                <img class="captcha-img js-captcha-img" src="" alt="">
+                <input type="hidden" name="captcha_token">
+                <div class="tip-box js-tip"></div>
+              </div>
+              <div class="control-group input-wrap" id="fast-login-code">
+                <input id="fast-code" type="text" class="form-control" name="verification_code" placeholder="请输入验证码">
+                <a class="btn btn-code js-get-code" data-delay="60">获取验证码</a>
+                <i class="iconfont-xhsd icon-yanzhengma input-icon"></i>
+                <div class="tip-box js-tip"></div>
+              </div>
+              <div class="link-group">&nbsp;</div>
+              <div class="control-group" id="fast-login-submit">
+                <input type="submit" class="form-control btn btn-primary" disabled value="立即登录">
+              </div>
+              <div class="social-group">
+                <div class="title-wrap">
+                  <span class="title">or</span>
+                </div>
+                <div class="content-wrap">
+                    <a class="iconfont-a iconfont-xhsd icon-weixin icon-const-weixin" href="/api/authorize?social_provider_id=wechat"></a>
+                    <a class="iconfont-a iconfont-xhsd icon-qq icon-const-qq" href="/api/authorize?social_provider_id=qq"></a>
+                    <a class="iconfont-a iconfont-xhsd icon-weibo icon-const-weibo" href="/api/authorize?social_provider_id=weibo"></a>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;line-height:40px;font-size:12px;color:#1E1E1E;width:1200px;margin:55px auto 0;">
+    Copyright © 2015-2019  新华互联电子商务有限责任公司 版权所有
+  </div>    <script src="//assets-www.xinhuashudian.com/assets/scripts/vendor-809dfb.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="http://cdn.staticfile.org/jquery-placeholder/2.0.8/jquery.placeholder.js"></script>
+    <![endif]-->
+    <script src="//assets-www.xinhuashudian.com/assets/scripts/templates-back-cf39b8.js"></script>
+    <script src="//assets-www.xinhuashudian.com/assets/scripts/app-back-818348.js"></script>
+
+
+    <script>
+    (function(a,h,c,b,f,g){a["UdeskApiObject"]=f;a[f]=a[f]||function(){(a[f].d=a[f].d||[]).push(arguments)};g=h.createElement(c);g.async=1;g.charset="utf-8";g.src=b;c=h.getElementsByTagName(c)[0];c.parentNode.insertBefore(g,c)})(window,document,"script","//assets-cli.udesk.cn/im_client/js/udeskApi.js","ud");
+    ud({
+    "code": "240eij61",
+    "manualInit": true,
+    "link": "//xhsd.udesk.cn/im_client/?web_plugin_id=48290",
+    });
+    </script>
+    <script>
+      window.i18nEnv = {"lng":"zh-CN","ns":["all_mix"],"defaultNS":"all_mix"};
+      i18nIniter({
+        cache: { enable: false },
+        resourceFormat: 'json',
+        callback: function () {
+          require("app")();
+        }
+      });
+      $.csrf = function() {
+        return "Fzd9yJsI-s0qvRtD67y3qwA0jRgism3bKQzk"
+      }
+    </script>
+    <div class="hide">
+      <script src="//s13.cnzz.com/z_stat.php?id=1274306588&web_id=1274306588" language="JavaScript"></script>
+    </div>
+    
+  </body>
+  <!-- Powered by Terminus.io -->
+</html>
