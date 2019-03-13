@@ -5,7 +5,7 @@ header{
 	.header{
     	width: 100%;
     	background:#f5f5f5;
-    	border: solid 1px #ddd;
+    	border-bottom: solid 1px #ddd;
 		.header-nav{
     		background:#f5f5f5;
     		width: 1194px;
@@ -24,6 +24,36 @@ header{
     			li{
     				float:left;
     				padding-left: 10px;
+    				position: relative;
+    				a:hover{
+    				    color: red;
+    				}
+    				.khfw{
+    				    width: 100px;
+    				        position: absolute;
+    				        display: none;
+    				        border: 1px solid #ddd;
+    				        padding: 5px;
+    				        border-top: none;
+    				    ul{
+    				        li{
+    				            float: left;
+    				        }
+    				    }
+    				}
+    				.sjxh{
+    				    position: absolute;
+                        display: none;
+                        width: 100px;
+                        height: 100px;
+                        top: 50px;
+                        right: 0;
+                        img{
+                           width: 100px;
+                           height: 100px;
+                        }
+    				}
+				    
     				i{
     				    color: red;
     				}
@@ -31,6 +61,9 @@ header{
     					font-size: 12px;
     					color: #ddd;
     				}
+    			}
+    			li:hover div{
+    			    display: block;
     			}
     		}	
 		}
@@ -83,6 +116,9 @@ header{
                         padding-left: 20px;
                         color: #c8c8c8;
                     }
+                    dd:hover{
+                        text-decoration: underline;
+                    }
                 }
 		    }
 		    .article-shopping{
@@ -131,6 +167,9 @@ header{
 		                float: left;
 		                padding-left: 30px;
 		            }
+		            li:hover{
+		                color: red;
+		            }
 		        }
 		    }
 		}
@@ -149,11 +188,18 @@ section{
                     overflow: hidden;
                     position: relative;
                     ul{
+                        
                         position:relative;
                         li{
                             position:absolute;
                             top:0;
                             left:0;
+                            width: 100%;
+                            height: 380px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                            }
                         }
                     }
                     ol{
@@ -240,6 +286,9 @@ section{
                                 width: 320px;
                                 height: 85px;
                                 padding-left: 9px;
+                                a:hover h2{
+                                    color: #d7622d;
+                                }
                                 a{
                                     width:310px;
                                     height: 60px;
@@ -334,6 +383,9 @@ section{
                     .tab{
                         height: 160px;
                         clear: both;
+                        .tab-one:hover h2{
+                            color: #C62E2D;
+                        }
                         .tab-one{
                             float: left;
                             padding: 10px;
@@ -378,11 +430,18 @@ section{
                     }
                     .list-book{
                         ul{
+                            li:hover{
+                                    box-shadow: 5px 5px 5px 5px #999;
+                                }
+                            li:last-child{
+                                margin-right: 0;
+                            }
                             li{
                                 width: 390px;
                                 height: 330px;
                                 float: left;
-                                padding-right: 10px;
+                                margin-right: 10px;
+                                
                                 .people{
                                     .p-one{
                                         .p-img{
@@ -459,12 +518,16 @@ section{
                                 }
                             }
                             .child-2-2{
+                                .child-tao:hover h2{
+                                         color: #C62E2D;
+                                    }
                                 .child-tao{
                                     position: relative;
                                     display: inline-block;
                                     margin: 8px;
                                     padding: 10px;
                                     width: 170px;
+                                    
                                     .child-img{
                                         width: 160px;
                                         height: 160px;

@@ -119,11 +119,7 @@
            <span class="default" id="phoneErr">请输入手机号码</span>
        </div>
        
-	    <div id="form-itemGroup">
-           <label for="userurl">个人主页：</label>
-           <input type="text" id="userurl" class="userName" placeholder="请输入个人主页URL" onBlur="checkurl()" oninput="checkurl()">
-           <span class="default" id="urlErr"></span>
-       </div>
+	    
 	   
        <div>
          <button type="submit" class="divBtn">提交</button>
@@ -270,32 +266,7 @@
 			  return true;
 			 }
 	   }
-	   //主页
-	   function checkurl(){
-	    
-		var username = document.getElementById('userurl');
-		var errname = document.getElementById('urlErr');
-		var pattern = /^((http)?:\/\/)[^\s]{5,}\.com$/;   
-		//用户名格式正则表达式：URL地址必须是http://开头，必须是.com结尾，中间包含5个以上字符
-		if(userurl.value.length == 0){
-			errname.innerHTML="用户名不能为空"
-			errname.className="error"
-			return false;
-			}
-		
-		if(!pattern.test(userurl.value)){
-			errname.innerHTML="用户名不合规范"
-			errname.className="error"
-			return false;
-			}
-		 else{
-			  errname.innerHTML="OK"
-	          errname.className="success";
-			  return true;
-			 }
-	    
-		}
-	   
+	  
  </script>
 
 	</body>

@@ -15,7 +15,7 @@ h2 {
 header .header {
   width: 100%;
   background: #f5f5f5;
-  border: solid 1px #ddd; }
+  border-bottom: solid 1px #ddd; }
   header .header .header-nav {
     background: #f5f5f5;
     width: 1194px;
@@ -31,12 +31,36 @@ header .header {
       line-height: 30px; }
       header .header .header-nav ul li {
         float: left;
-        padding-left: 10px; }
+        padding-left: 10px;
+        position: relative; }
+        header .header .header-nav ul li a:hover {
+          color: red; }
+        header .header .header-nav ul li .khfw {
+          width: 100px;
+          position: absolute;
+          display: none;
+          border: 1px solid #ddd;
+          padding: 5px;
+          border-top: none; }
+          header .header .header-nav ul li .khfw ul li {
+            float: left; }
+        header .header .header-nav ul li .sjxh {
+          position: absolute;
+          display: none;
+          width: 100px;
+          height: 100px;
+          top: 50px;
+          right: 0; }
+          header .header .header-nav ul li .sjxh img {
+            width: 100px;
+            height: 100px; }
         header .header .header-nav ul li i {
           color: red; }
         header .header .header-nav ul li span {
           font-size: 12px;
           color: #ddd; }
+      header .header .header-nav ul li:hover div {
+        display: block; }
 
 header .article {
   width: 100%;
@@ -76,6 +100,8 @@ header .article {
         header .article .header-article .article-input .article-nav dd {
           padding-left: 20px;
           color: #c8c8c8; }
+        header .article .header-article .article-input .article-nav dd:hover {
+          text-decoration: underline; }
     header .article .header-article .article-shopping {
       margin-left: 15px;
       width: auto;
@@ -112,6 +138,8 @@ header .article {
       header .article .nav .nav-nav ul li {
         float: left;
         padding-left: 30px; }
+      header .article .nav .nav-nav ul li:hover {
+        color: red; }
 
 section .section .car {
   width: 100%;
@@ -126,7 +154,12 @@ section .section .car {
       section .section .car .car-ring .wrapper ul li {
         position: absolute;
         top: 0;
-        left: 0; }
+        left: 0;
+        width: 100%;
+        height: 380px; }
+        section .section .car .car-ring .wrapper ul li img {
+          width: 100%;
+          height: 100%; }
     section .section .car .car-ring .wrapper ol {
       position: absolute;
       bottom: 10px;
@@ -196,6 +229,8 @@ section .section .list {
             width: 320px;
             height: 85px;
             padding-left: 9px; }
+            section .section .list .list-2 .list-two .eve-one .one-row .component a:hover h2 {
+              color: #d7622d; }
             section .section .list .list-2 .list-two .eve-one .one-row .component a {
               width: 310px;
               height: 60px; }
@@ -261,6 +296,8 @@ section .section .list {
       section .section .list .list-4 .list-four .tab {
         height: 160px;
         clear: both; }
+        section .section .list .list-4 .list-four .tab .tab-one:hover h2 {
+          color: #C62E2D; }
         section .section .list .list-4 .list-four .tab .tab-one {
           float: left;
           padding: 10px;
@@ -294,11 +331,15 @@ section .section .list {
       margin: 0 auto; }
       section .section .list .list-5 .list-five .title-one {
         height: 60px; }
+      section .section .list .list-5 .list-five .list-book ul li:hover {
+        box-shadow: 5px 5px 5px 5px #999; }
+      section .section .list .list-5 .list-five .list-book ul li:last-child {
+        margin-right: 0; }
       section .section .list .list-5 .list-five .list-book ul li {
         width: 390px;
         height: 330px;
         float: left;
-        padding-right: 10px; }
+        margin-right: 10px; }
         section .section .list .list-5 .list-five .list-book ul li .people .p-one .p-img {
           height: 152px;
           padding-top: 33px;
@@ -352,6 +393,8 @@ section .section .list {
             section .section .list .list-list .list-list-one .child .child-2 .child-2-1 img {
               width: 160px;
               height: 470px; }
+          section .section .list .list-list .list-list-one .child .child-2 .child-2-2 .child-tao:hover h2 {
+            color: #C62E2D; }
           section .section .list .list-list .list-list-one .child .child-2 .child-2-2 .child-tao {
             position: relative;
             display: inline-block;
