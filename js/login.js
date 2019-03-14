@@ -1,6 +1,6 @@
 $(function(){
 	
-	console.log($.cookie());	
+//	console.log($.cookie());	
 		$("#btn").click(function(){
 			if($("#user").val()==$.cookie().name && $("#pwd").val()==$.cookie().pwd){
 				location.href = "index.html";

@@ -88,12 +88,17 @@
                                     border: none;
                                 }
                             }
-                            span{
-                                font-size: 12px;
-                                color: #666;
-                                line-height: 18px;
-                                margin-right: 180px;
+                            .span{
+                                    font-size: 12px;
+                                    height: 18px;
+                                span{
+                                    margin-right: 180px;
+                                    color: #666;
+                                    line-height: 18px;
+                                    display: none;
+                                }
                             }
+                            
                             .line{
                                 width: 288px;
                                 height: 12px;

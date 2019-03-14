@@ -91,11 +91,14 @@ h2 {
                   width: 255px;
                   margin-right: 0;
                   border: none; }
-              .section .login .border .box .one .num .num-boxs span {
+              .section .login .border .box .one .num .num-boxs .span {
                 font-size: 12px;
-                color: #666;
-                line-height: 18px;
-                margin-right: 180px; }
+                height: 18px; }
+                .section .login .border .box .one .num .num-boxs .span span {
+                  margin-right: 180px;
+                  color: #666;
+                  line-height: 18px;
+                  display: none; }
               .section .login .border .box .one .num .num-boxs .line {
                 width: 288px;
                 height: 12px;
