@@ -28,3 +28,15 @@
 		}
 	} 
 	//导航栏
+	
+//$(window).scroll(200,function(){
+//	$(".top").css({display:'block',position: 'sticky',top: 0})
+//})
+
+$(window).scroll(function(){
+        if( $(window).scrollTop() > 200 ){
+			$(".top").css({display:'block'});   
+        }else{
+           $(".top").css({display:'none'});
+        }
+})

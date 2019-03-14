@@ -12,6 +12,9 @@ a {
 h2 {
   font-weight: normal; }
 
+body {
+  position: relative; }
+
 header .header {
   width: 100%;
   background: #f5f5f5;
@@ -128,8 +131,8 @@ header .article {
       background: #90766d;
       color: #fff;
       width: 186px;
-      height: 47px;
-      line-height: 47px; }
+      height: 40px;
+      line-height: 40px; }
       header .article .nav .nav-menu a {
         padding: 10px 20px;
         color: #fff; }
@@ -141,6 +144,64 @@ header .article {
         padding-left: 30px; }
       header .article .nav .nav-nav ul li:hover {
         color: red; }
+
+.top {
+  width: 100%;
+  height: 72px;
+  background: #d05d59;
+  display: none;
+  position: fixed;
+  top: 0; }
+  .top .top-t {
+    width: 1194px;
+    margin: 0 auto; }
+    .top .top-t .f {
+      float: left; }
+    .top .top-t .top-img {
+      width: 230px;
+      height: 50px;
+      margin-top: 11px;
+      position: relative;
+      line-height: 30px;
+      float: left;
+      box-sizing: border-box;
+      cursor: pointer; }
+      .top .top-t .top-img img {
+        max-width: 150px;
+        max-height: 50px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto 0;
+        position: absolute; }
+    .top .top-t .top-input {
+      position: relative;
+      margin-top: 21px; }
+      .top .top-t .top-input input {
+        border: none;
+        width: 636px;
+        height: 32px;
+        border-radius: 0;
+        padding: 0 0 0 10px;
+        line-height: 32px; }
+      .top .top-t .top-input span {
+        margin-left: -1px; }
+        .top .top-t .top-input span button {
+          color: #fff;
+          border: 1px solid #bd5450;
+          width: 86px;
+          height: 32px;
+          border-radius: 0;
+          background-color: rgba(0, 0, 0, 0.1);
+          padding: 5px 28px !important;
+          font-size: 14px;
+          margin-bottom: 0;
+          font-weight: 400;
+          text-align: center; }
+        .top .top-t .top-input span i {
+          font-size: 16px;
+          font-style: normal; }
 
 section .section .car {
   width: 100%;
