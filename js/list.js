@@ -34,11 +34,13 @@ var html = "";
 for( var i = 0 ; i < arr.length ; i++ ){
 	html += `
 		<div class="tab-one" data-list-id="${i}">
-			<div class="tab-img">
-				<img src=${arr[i].image}/>
-			</div>
-			<h2>${arr[i].title}</h2>
-			<p>￥<span>${arr[i].price}</span></p>
+			<a href="details.html">
+				<div class="tab-img">
+					<img src=${arr[i].image}/>
+				</div>
+				<h2>${arr[i].title}</h2>
+				<p>￥<span>${arr[i].price}</span></p>
+			</a>
 			<span class="go" style="color:#C62E2D;font-size:12px;cursor: pointer;">加入购物车</span>
 		</div>
 	` 
@@ -52,16 +54,20 @@ list4.innerHTML = html;
 $(function(){
 //	加载已有的购物车信息
 	loadCart();
+	//单击跳转页面
+	$('tab-img').click(function(){
+		
+	})
 	//给加入购物车按钮添加点击事件
 	$(".go").click(function(e){
 		//获取商品的id(用来区分不同的商品)
 		var goodId = $(this).parent().attr("data-list-id");
 		//获取商品的名称
-		var goodName = $(this).siblings("h2").html();
+		var goodName = $(this).siblings().children("h2").html();
 		//获取商品的图片
-		var goodImg = $(this).siblings(".tab-img").children("img").attr("src");
+		var goodImg = $(this).siblings().children(".tab-img").find("img").attr("src");
 		//获取商品价格
-		var goodPrice = $(this).siblings("p").find("span").html();
+		var goodPrice = $(this).siblings().children("p").children("span").html();
 		//console.log(goodName,goodImg,goodPrice);
         //获取cookie中的信息
         //如果cookie中没有信息会返回一个undefined ,我所须是一个字符串类型的数据，所以将它转成一个“”空字符串。保持数据类型一致。
