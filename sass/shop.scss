@@ -1,0 +1,212 @@
+@import 'public';
+
+.main_wrap{
+    width: 100%;
+}
+.main_wrap .main .top{
+    width: 1200px;
+    padding: 20px 0 10px;
+    margin: 0 auto;
+    position: relative;
+}
+.main_wrap .main .top a{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    font-size: 12px;
+}
+.main_wrap .main .top h1{
+    text-align: center;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+/*  */
+/* ._left{
+    float: left;
+}
+._right{
+    float: right;
+} */
+/* .clear_fix{
+    clear: both;;
+} */
+.good_list{
+    position: relative;
+    margin-top: 20px;
+   
+}
+.good_list .group_item{
+    width: 1048px;
+    margin: 0 auto 20px;
+    position: relative;
+    border: 1px solid #e5e5e5;
+}
+
+.good_list .group_item .goods_item{
+    position: relative;
+    padding: 20px 0;
+    display: block;
+}
+.good_list .group_item .goods_item .select{
+    position: absolute;
+    top: 45%;
+    width: 16px;
+    height: 16px;
+    left: 28px;
+}
+.good_list .group_item .goods_item .item_message{
+    width: 972px;
+    height: 110px;
+
+    margin-left: 74px;
+    
+}
+.good_list .group_item .goods_item .item_message .img_wrap{
+    width: 110px;
+    height: 110px;
+ 
+    float: left;
+}
+.good_list .group_item .goods_item .item_message .img_wrap img{
+    width: auto;
+    height: 100%;
+}
+.good_list .group_item .goods_item .item_message .p_info{
+    margin-left: 20px;
+
+    float: left;
+}
+.good_list .group_item .goods_item .item_message .p_info .p_detail{
+    position: relative;
+    width: 625px;
+    float: left;
+ 
+}
+.good_list .group_item .goods_item .item_message .p_info .p_detail h2{
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 20px;
+ 
+}
+.good_list .group_item .goods_item .item_message .p_info .p_detail h4{
+    line-height: 20px;
+    color: #949494;
+    font-size: 12px;
+
+
+}
+.good_list .group_item .goods_item .item_message .p_info .p_detail .price_wrap{
+   margin-top: 48px; 
+   color: #fa4d09;
+}
+.good_list .group_item .goods_item .item_message .p_info .p_edit{
+    float: right;
+    position: relative;
+    width: 195px;
+
+}
+.good_list .group_item .goods_item .item_message .p_info .p_edit .sum{
+    font-size: 14px;
+    color: #ff4001;
+    text-align: right;
+    
+}
+.good_list .group_item .goods_item .item_message .p_info .p_edit .input_wrap{
+    margin-top: 75px;
+}
+.good_list .group_item .goods_item .item_message .p_info .p_edit .input_wrap input{
+    width: 95px;
+    border: none;
+    text-align: center;
+}
+
+.good_list .blank{
+    text-align: center;
+    font-size: 14px;
+    padding: 68px 0 160px;
+    display: none;
+}
+.good_list .blank img{
+    max-width: 100%;
+    vertical-align: top;
+}
+.good_list .blank p{
+    margin-top: 40px;
+}
+.good_list .blank p a{
+    color: #ff4001;
+}
+
+/* 结算 */
+
+.amout_wrap{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 11;
+    width: 100%; 
+    background: #ffffff;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+}
+.amout_wrap .amout{
+    width: 1050px;
+    position: relative;
+    margin: auto;
+}
+.amout_wrap .amout .all{
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.amout_wrap .amout .all input{
+    width: 30px;
+}
+.amout_wrap .amout .del{
+    display: inline-block;
+    width: 69px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 20px;
+    border-right: 1px solid #949494;
+}
+.amout_wrap .amout .inline{
+    margin-left: 20px;
+    display: inline-block;
+}
+.amout_wrap .amout .inline b{
+    color: #fa4d09;
+}
+.amout_wrap .amout .tatol_wrap{
+    float: right;
+    margin-right: 260px;
+
+}
+.amout_wrap .amout .tatol_wrap span{
+    font-size: 18px;
+    color: #fa4d09;
+}
+
+.amout_wrap .amout button{
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    right: 0;
+    top: 10px;
+    color: #ffffff;
+    background: #ff4001;
+    border: 0;
+}
+
